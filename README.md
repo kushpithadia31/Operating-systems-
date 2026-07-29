@@ -1,3 +1,10 @@
+![Profile Views](https://komarev.com/ghpvc/?username=YOUR_USERNAME&style=for-the-badge)
+
+![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/REPO_NAME?style=for-the-badge)
+
+![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/REPO_NAME?style=for-the-badge)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/REPO_NAME?style=for-the-badge)
 # 🐧 UNIX Important Commands – A Practical Guide
 
 ## Introduction
