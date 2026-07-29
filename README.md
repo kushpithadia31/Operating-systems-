@@ -1,189 +1,202 @@
-![Profile Views](https://komarev.com/ghpvc/?username=kushpithadia31&style=for-the-badge)
+<div align="center">
 
-![GitHub Stars](https://img.shields.io/github/stars/kushpithadia31/Operating-systems?style=for-the-badge)
+# 🐧 UNIX Important Commands
+### *A Practical Guide to Essential UNIX & Linux Terminal Commands*
 
-![GitHub Forks](https://img.shields.io/github/forks/kushpithadia31/Operating-systems?style=for-the-badge)
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00FF88&center=true&vCenter=true&width=650&lines=Complete+UNIX+%26+Linux+OS+Fundamentals;Infosys+Springboard+Course+Notes;Essential+UNIX+Commands;Cybersecurity+Student+Reference" />
 
-![GitHub Last Commit](https://img.shields.io/github/last-commit/kushpithadia31/Operating-systems?style=for-the-badge)
+<p align="center">
 
-![GitHub Repo Size](https://img.shields.io/github/repo-size/kushpithadia31/Operating-systems?style=for-the-badge)
+![Linux](https://img.shields.io/badge/Linux-UNIX-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?style=for-the-badge&logo=gnubash)
+![Platform](https://img.shields.io/badge/Platform-Infosys%20Springboard-0078D4?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
-![GitHub Top Language](https://img.shields.io/github/languages/top/kushpithadia31/Operating-systems?style=for-the-badge)
-
-![GitHub Language Count](https://img.shields.io/github/languages/count/kushpithadia31/Operating-systems?style=for-the-badge)
-
-![GitHub Issues](https://img.shields.io/github/issues/kushpithadia31/Operating-systems?style=for-the-badge)
-
-![GitHub License](https://img.shields.io/github/license/kushpithadia31/Operating-systems?style=for-the-badge)
-# 🐧 UNIX Important Commands – A Practical Guide
-
-## Introduction
-
-The UNIX operating system has been the foundation of modern computing for decades. Most modern operating systems, including Linux and macOS, inherit many concepts from UNIX. One of the biggest strengths of UNIX is its powerful Command Line Interface (CLI), which enables users to perform tasks quickly and efficiently.
-
-As part of the **Complete UNIX & Linux OS Fundamentals Training** on **Infosys Springboard**, I explored the essential UNIX commands that are commonly used for file management, process handling, user administration, networking, and system monitoring. This article summarizes the most important commands along with their purpose and practical examples.
+</p>
 
 ---
 
-## Why Learn UNIX Commands?
+*"The command line is where real control begins."*
 
-Unlike graphical interfaces, UNIX commands allow users to interact directly with the operating system. They are widely used by:
+</div>
 
-- Software Developers
-- System Administrators
-- Cybersecurity Professionals
-- DevOps Engineers
-- Cloud Engineers
+# 📖 Introduction
 
-Learning these commands improves productivity and provides a deeper understanding of how an operating system works.
+The UNIX operating system has served as the backbone of modern computing for over five decades. Many popular operating systems, including **Linux** and **macOS**, are built upon UNIX concepts, making UNIX knowledge a valuable skill for software developers, cybersecurity professionals, system administrators, and DevOps engineers.
+
+This repository documents the important commands learned during the **Complete UNIX & Linux OS Fundamentals Training** offered by **Infosys Springboard**. Rather than simply listing commands, this guide explains **what each command does**, **why it is important**, and **where it is commonly used**.
 
 ---
 
-# 1. Navigating the File System
+# 📚 Table of Contents
 
-Navigation is one of the first skills every UNIX user should master.
+- Introduction
+- Why Learn UNIX?
+- File & Directory Navigation
+- File Management
+- Viewing File Contents
+- Searching Files
+- User Management
+- Process Management
+- File Permissions
+- Disk & Memory Monitoring
+- Networking Commands
+- Compression Commands
+- Practice Session
+- Key Learnings
+- Conclusion
 
-### Print Current Directory
+---
+
+# 🚀 Why Learn UNIX?
+
+> Modern servers, cloud platforms, and cybersecurity tools all rely heavily on Linux/UNIX systems.
+
+### Learning UNIX helps you:
+
+✅ Understand Operating Systems
+
+✅ Work with Linux Servers
+
+✅ Perform System Administration
+
+✅ Automate Tasks
+
+✅ Learn Shell Scripting
+
+✅ Build Cybersecurity Skills
+
+---
+
+# 📂 File & Directory Navigation
+
+## Print Current Directory
 
 ```bash
 pwd
 ```
 
-Displays the current working directory.
-
-Example Output:
-
-```text
-/home/kush/Documents
-```
+📌 Displays your current working directory.
 
 ---
 
-### List Files and Directories
+## List Files
 
 ```bash
 ls
 ```
 
-Shows all visible files.
+Lists all visible files.
 
-For detailed information:
+### Long Listing
 
 ```bash
 ls -l
 ```
 
-To include hidden files:
+Shows
+
+- Permissions
+- Owner
+- File Size
+- Date
+- File Name
+
+---
+
+## Hidden Files
 
 ```bash
 ls -la
 ```
 
+Displays hidden files beginning with `.`
+
 ---
 
-### Change Directory
+## Change Directory
 
 ```bash
 cd Desktop
 ```
 
-Move to Desktop directory.
+Move into Desktop.
 
 ```bash
 cd ..
 ```
 
-Move one directory back.
+Move back one directory.
 
 ---
 
-# 2. Creating and Managing Files
+# 📁 File Management
 
-Creating files and folders is a basic administrative task.
-
-### Create a Directory
+### Create Directory
 
 ```bash
-mkdir Projects
+mkdir LinuxLab
 ```
 
-Creates a folder named **Projects**.
+Creates a new directory.
 
 ---
 
-### Create an Empty File
+### Create Empty File
 
 ```bash
 touch notes.txt
 ```
 
-Creates a new empty text file.
-
 ---
 
-### Copy Files
+### Copy File
 
 ```bash
 cp notes.txt backup.txt
 ```
 
-Copies one file to another.
-
 ---
 
-### Move or Rename Files
+### Rename File
 
 ```bash
-mv notes.txt LinuxNotes.txt
+mv notes.txt unix_notes.txt
 ```
-
-Moves or renames files.
 
 ---
 
-### Delete Files
+### Delete File
 
 ```bash
 rm notes.txt
 ```
 
-Deletes a file permanently.
-
-Delete an entire folder recursively:
-
-```bash
-rm -r Projects
-```
+⚠ **Warning:** Deleted files cannot be recovered using `rm`.
 
 ---
 
-# 3. Reading File Contents
+# 📖 Reading Files
 
-Viewing files from the terminal avoids opening graphical applications.
-
-### Display Entire File
+Display file contents
 
 ```bash
 cat notes.txt
 ```
 
----
-
-### Display First 10 Lines
+View first 10 lines
 
 ```bash
 head notes.txt
 ```
 
----
-
-### Display Last 10 Lines
+View last 10 lines
 
 ```bash
 tail notes.txt
 ```
 
-Useful for monitoring log files.
+Monitor live log
 
 ```bash
 tail -f server.log
@@ -191,59 +204,49 @@ tail -f server.log
 
 ---
 
-# 4. Searching Files
+# 🔍 Searching
 
-Finding information quickly is essential in UNIX.
-
-### Search Text
+Search for a word
 
 ```bash
 grep "error" log.txt
 ```
 
-Searches for the word **error**.
-
-Ignore uppercase/lowercase:
+Search ignoring uppercase/lowercase
 
 ```bash
 grep -i error log.txt
 ```
 
----
-
-### Find Files
+Find files
 
 ```bash
-find . -name report.txt
+find . -name notes.txt
 ```
-
-Searches for a file in the current directory.
 
 ---
 
-# 5. File Permissions
+# 🔐 File Permissions
 
-UNIX provides a permission system to protect files.
-
-View permissions:
+View permissions
 
 ```bash
 ls -l
 ```
 
-Example:
+Example
 
 ```text
 -rwxr-xr--
 ```
 
-Grant execute permission:
+Give execute permission
 
 ```bash
 chmod +x script.sh
 ```
 
-Change ownership:
+Change owner
 
 ```bash
 chown username file.txt
@@ -251,29 +254,27 @@ chown username file.txt
 
 ---
 
-# 6. Process Management
+# ⚙ Process Management
 
-Every running application is known as a process.
-
-Display running processes:
+View running processes
 
 ```bash
 ps
 ```
 
-Live process monitoring:
+Real-time monitoring
 
 ```bash
 top
 ```
 
-Terminate a process:
+Terminate process
 
 ```bash
 kill PID
 ```
 
-Force terminate:
+Force terminate
 
 ```bash
 kill -9 PID
@@ -281,43 +282,49 @@ kill -9 PID
 
 ---
 
-# 7. User Information
+# 🌐 Networking
 
-Current logged-in user:
+Check connectivity
 
 ```bash
-whoami
+ping google.com
 ```
 
-Display user ID:
+Display IP Address
 
 ```bash
-id
+ip addr
 ```
 
-Show all logged-in users:
+Download files
 
 ```bash
-who
+wget URL
+```
+
+Retrieve webpage
+
+```bash
+curl URL
 ```
 
 ---
 
-# 8. Disk and Memory Information
+# 💾 Disk Monitoring
 
-Check available disk space:
+Disk Usage
 
 ```bash
 df -h
 ```
 
-Check folder size:
+Folder Size
 
 ```bash
 du -sh Downloads
 ```
 
-View memory usage:
+RAM Usage
 
 ```bash
 free -h
@@ -325,49 +332,21 @@ free -h
 
 ---
 
-# 9. Networking Commands
+# 📦 Compression
 
-Check internet connectivity:
-
-```bash
-ping google.com
-```
-
-Display IP address:
+Create Archive
 
 ```bash
-ip addr
+tar -cvf project.tar Project
 ```
 
-Download files:
-
-```bash
-wget https://example.com/file.zip
-```
-
-Retrieve web content:
-
-```bash
-curl https://example.com
-```
-
----
-
-# 10. Compression Commands
-
-Create an archive:
-
-```bash
-tar -cvf project.tar Project/
-```
-
-Extract archive:
+Extract Archive
 
 ```bash
 tar -xvf project.tar
 ```
 
-Compress using gzip:
+Compress
 
 ```bash
 gzip file.txt
@@ -375,24 +354,12 @@ gzip file.txt
 
 ---
 
-# Common Keyboard Shortcuts
-
-| Shortcut | Function |
-|----------|----------|
-| Ctrl + C | Stop current process |
-| Ctrl + Z | Suspend process |
-| Ctrl + D | Exit terminal |
-| Ctrl + L | Clear screen |
-| Ctrl + R | Search command history |
-| Tab | Auto-complete commands |
-
----
-
-# Sample Practice Session
+# 💻 Practice Session
 
 ```bash
-mkdir LinuxLab
-cd LinuxLab
+mkdir UNIX_Practice
+
+cd UNIX_Practice
 
 touch notes.txt
 
@@ -402,33 +369,43 @@ cat notes.txt
 
 cp notes.txt backup.txt
 
-ls -l
-
-chmod +x notes.txt
+ls -la
 
 pwd
+
+chmod +x notes.txt
 ```
 
 ---
 
-# Key Takeaways
+# 💡 Key Learnings
 
-- UNIX commands provide complete control over the operating system.
-- Command-line tools are significantly faster than graphical interfaces for repetitive tasks.
-- Understanding file permissions enhances system security.
-- Process management commands help monitor and control running applications.
-- Networking and system monitoring commands are essential for Linux administrators and cybersecurity professionals.
+> 📌 Command-line interfaces provide faster and more efficient system interaction.
 
----
+> 📌 UNIX permissions ensure secure access control.
 
-# Conclusion
+> 📌 Process management commands help monitor running applications.
 
-Mastering UNIX commands is an essential step for anyone pursuing careers in software development, cybersecurity, cloud computing, or system administration. While graphical interfaces simplify everyday tasks, the command line offers unmatched flexibility, automation, and control.
+> 📌 Networking commands assist in troubleshooting connectivity issues.
 
-The **Complete UNIX & Linux OS Fundamentals Training** on **Infosys Springboard** provided practical exposure to these core commands and strengthened my understanding of UNIX-based operating systems. This article serves as a concise reference for the most frequently used UNIX commands and their real-world applications.
+> 📌 UNIX commands form the foundation of Linux administration and cybersecurity.
 
 ---
 
-**Author:** Kush Pithadiya  
-**Course:** Complete UNIX & Linux OS Fundamentals Training  
-**Platform:** Infosys Springboard
+# 🎯 Conclusion
+
+Completing the **Complete UNIX & Linux OS Fundamentals Training** strengthened my understanding of the UNIX operating system and its command-line environment. Mastering these commands is an essential step toward becoming proficient in Linux administration, cloud computing, DevOps, and cybersecurity.
+
+This repository serves as a quick reference guide and a demonstration of the concepts learned throughout the course.
+
+---
+
+<div align="center">
+
+## ⭐ If you found this repository useful, consider giving it a star!
+
+### Made with ❤️ by **Kush Pithadia**
+
+**Cybersecurity Student • Linux Enthusiast • Future Security Engineer**
+
+</div>
