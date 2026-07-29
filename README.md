@@ -1,10 +1,20 @@
-![Profile Views](https://komarev.com/ghpvc/?username=YOUR_USERNAME&style=for-the-badge)
+![Profile Views](https://komarev.com/ghpvc/?username=kushpithadia31&style=for-the-badge)
 
-![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/REPO_NAME?style=for-the-badge)
+![GitHub Stars](https://img.shields.io/github/stars/kushpithadia31/Operating-systems?style=for-the-badge)
 
-![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/REPO_NAME?style=for-the-badge)
+![GitHub Forks](https://img.shields.io/github/forks/kushpithadia31/Operating-systems?style=for-the-badge)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/REPO_NAME?style=for-the-badge)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/kushpithadia31/Operating-systems?style=for-the-badge)
+
+![GitHub Repo Size](https://img.shields.io/github/repo-size/kushpithadia31/Operating-systems?style=for-the-badge)
+
+![GitHub Top Language](https://img.shields.io/github/languages/top/kushpithadia31/Operating-systems?style=for-the-badge)
+
+![GitHub Language Count](https://img.shields.io/github/languages/count/kushpithadia31/Operating-systems?style=for-the-badge)
+
+![GitHub Issues](https://img.shields.io/github/issues/kushpithadia31/Operating-systems?style=for-the-badge)
+
+![GitHub License](https://img.shields.io/github/license/kushpithadia31/Operating-systems?style=for-the-badge)
 # 🐧 UNIX Important Commands – A Practical Guide
 
 ## Introduction
